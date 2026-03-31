@@ -2,10 +2,15 @@
   "name": "zabito-admin",
   "version": "1.0.0",
   "description": "Zabito Hostel Management System",
+  "engines": {
+    "node": ">=22.0.0"
+  },
   "scripts": {
     "dev": "concurrently --names \"server,client\" --prefix-colors \"blue,green\" \"npm run server\" \"npm run client\"",
     "server": "node server/index.js",
     "client": "cd client && npx vite --port 5173",
+    "build": "cd client && npm install && npx vite build",
+    "start": "node server/seed.js && node server/index.js",
     "seed": "node server/seed.js"
   },
   "dependencies": {
