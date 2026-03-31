@@ -1,0 +1,9 @@
+{
+  "appId": "com.zabito.admin",
+  "appName": "Zabito Admin",
+  "webDir": "dist",
+  "bundledWebRuntime": false,
+  "server": {
+    "androidScheme": "https"
+  }
+}
