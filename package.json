@@ -10,7 +10,7 @@
     "server": "node server/index.js",
     "client": "cd client && npx vite --port 5173",
     "build": "cd client && npm install && npx vite build",
-    "start": "node server/seed.js && node server/index.js",
+    "start": "node --experimental-sqlite server/seed.js && node --experimental-sqlite server/index.js",
     "seed": "node server/seed.js"
   },
   "dependencies": {
